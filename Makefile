@@ -3,6 +3,10 @@ smet2html: smet2html.c
 
 clean:
 	rm smet2html 2>/dev/null || /bin/true
+	rm build-stamp 2>/dev/null || /bin/true
+	rm debian/files 2>/dev/null || /bin/true
+	rm debian/substvars 2>/dev/null || /bin/true
+	rm -rf debian/tmp 2>/dev/null || /bin/true
 
 install: smet2html
 	/usr/bin/install -c -p smet2html /usr/local/bin/smet2html
