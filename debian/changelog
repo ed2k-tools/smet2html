@@ -1,0 +1,9 @@
+smet2html (0.1-1) unstable; urgency=low
+
+  * First debian release.
+
+ -- Tim-Philipp Müller <t.i.m@orange.net>  Wed,   11 Dec 2002 16:34:26 +0000
+
+Local variables:
+mode: debian-changelog
+End:

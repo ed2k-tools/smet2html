@@ -4,3 +4,14 @@ smet2html: smet2html.c
 clean:
 	rm smet2html
 
+install: smet2html
+	/usr/bin/install -c -p smet2html /usr/local/bin/smet2html
+
+install-debpkgbuild: smet2html
+	mkdir debian/tmp/ 2>/dev/null || /bin/true
+	mkdir debian/tmp/usr/ 2>/dev/null || /bin/true
+	mkdir debian/tmp/usr/bin/ 2>/dev/null || /bin/true
+	/usr/bin/install -c -p smet2html debian/tmp/usr/bin/smet2html
+
+
+
